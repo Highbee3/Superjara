@@ -1,0 +1,137 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 350px;
+    /* height: 100vh; */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    line-height: 1rem;
+    border-radius: 5px;
+
+}
+
+.box1 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.box1 a {
+    background-color: #4ef037;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+.box2 {
+    line-height: 1.5rem;
+    color: #d80e70;
+}
+
+
+form {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+form span {
+    line-height: 2.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    border: 1px solid lightgray;
+    outline: 1px solid lightgray;
+
+}
+
+input:hover {
+    border: 1px solid #d80e70;
+    outline: 1px solid #d80e70;
+}
+
+form h4 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: rgb(159, 150, 150);
+}
+
+form button {
+    width: 100%;
+    background-color: #d80e70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.box3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box3 h4 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: rgb(159, 150, 150);   
+}
+
+.box3 a {
+    background-color:  lightgray;   
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+
+}
+
+
+.eye-icon {
+    width: 10%;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    transform: translateY(-90%);
+    cursor: pointer;
+    color: black;
+    background-color: transparent; 
+    z-index: -1;
+}
+
+
+@media screen and (max-width:650px) {
+    .container{
+        margin-top: 50px;
+    }
+    
+}
+

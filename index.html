@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperJara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #fafbff;
+  }
+  
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  
+  nav {
+    width: 100%;
+    height: 80px;
+    background-color: #F1F1FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+  
+  }
+  
+  ul {
+    display: flex;
+    width: 50%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .nav a:last-child {
+    background-color: #a901b8;
+    padding: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  nav a {
+    color: black;
+    font-family: "Roboto", sans-serif;
+  
+  }
+  
+  #Home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1FF;
+    padding: 100px;
+  }
+  
+  .home .box {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  
+  
+  .box h1 {
+    line-height: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 900;
+    
+  }
+  
+  .box p {
+    width: 75%;
+    font-family: "Roboto", sans-serif;
+    
+  }
+  
+  .box img {
+    margin-top: 10px;
+    width: 100%;
+  
+  }
+  
+  
+  .box button {
+    background-color: #a901b8;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .home-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.9rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    gap: 30px;
+    background-color: #fafbff;
+  }
+  
+  .homecon1 {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homecon1 img {
+    width: 10%;
+  }
+  
+  .Services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+    background-color: #fafbff;
+  
+  }
+  
+  .Services span {
+    font-size: 2.9rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+  }
+  
+  .Services p {
+    width: 59%;
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  
+  }
+  
+  .Services .home-services {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 10px;
+  
+  }
+  
+  .home-services .services-con {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    
+    
+  }
+  
+  .services-con h3 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    line-height: 3rem;
+    color: #3e4583;
+    
+  }
+  
+  .services-con h4 {
+    width: 70%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    line-height: 2rem;
+  
+  }
+  
+  .services-con img {
+    width: 20%;
+  }
+  
+  .con1 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+  }
+  
+  .con1 h2 {
+    /* width:90%; */
+    text-align: center;
+    line-height: 1.9rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.9rem;
+    
+  }
+  
+  .con1 p {
+    /* width:90%; */
+    text-align: center;
+    line-height: 1.9rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+  
+  }
+  
+  .con-2 {
+    width: 100%;
+    display: flex;
+  }
+  
+  .container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .container1 .con3 {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .con3 img {
+    width: 80%;
+    height: 100%;
+  }
+  
+  
+  .why-textbox {
+    width: 48%;
+    margin-top: 10rem;
+  }
+  
+  .why-box {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  
+  .why-box img {
+    width: 10%;
+  }
+  
+  
+  .why-text h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.5rem;
+  }
+  
+  .why-text p {
+    font-family: "Roboto", sans-serif;
+  
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+  
+  .register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .register h2 {
+    text-align: center;
+    line-height: 2.9rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.9rem;
+  
+  }
+  
+  .register p {
+    width: 46%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+  }
+  
+  .register-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+    line-height: 1.9rem;
+    font-family: "Roboto", sans-serif;
+  
+  
+  }
+  
+  .register-box p {
+    line-height: 1.9rem;
+    width: 95%;
+  }
+  
+  .register-box1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+    line-height: 1.9rem;
+    font-family: "Roboto", sans-serif;
+  
+  
+  
+  }
+  
+  .register-box1 p {
+    line-height: 1.9rem;
+    width: 95%;
+  }
+  
+  
+  .About {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .About-box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  
+  }
+  
+  .About-box h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+  
+  }
+  
+  .About-box p {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    line-height: 2.5rem;
+  
+  }
+  
+  .vision {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  
+  .vision-box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  
+  }
+  
+  
+  .vision-box h2 {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+  
+  }
+  
+  .vision-box p {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    line-height: 2.5rem;
+  
+  }
+  
+  .testimonial {
+    width: 100%;
+  }
+  
+  .testimonial-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 10%;
+  }
+  
+  .testimonial-heading h2 {
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  
+  }
+  
+  .testimonial-heading p {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #3E4581;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .testimonial-box {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0px 41.040000915527344px 42.47999954223633px 0px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+  }
+  
+  .stars {
+    margin-bottom: 1.2rem;
+  }
+  
+  .stars i {
+    color: #FBB040;
+    font-size: 0.9rem;
+    margin-right: .3rem;
+  }
+  
+  .testimonial-box-p {
+    color: #000;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .customer {
+    margin-top: 3rem;
+  }
+  
+  .customer h4 {
+    color: #313131;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .customer p {
+    color: #425466;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  
+  #price {
+    overflow-x: hidden;
+    margin-top: 10%;
+  }
+  
+  .data h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: #000078;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .data-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 20px;
+  
+  
+  }
+  
+  .data-plan {
+    width: 30%;
+    border: 1.5px solid rgba(51, 51, 51, 0.50);
+    border-radius: 0.7378rem;
+    background: #fff;
+    padding: 2.5rem 1.1rem;
+    color: #fff;
+    background-color: #000078;
+  
+  }
+  
+  .data-plan img {
+    width: 25%;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-bottom: 1rem;
+  }
+  
+  .data-plan h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .data-plan ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .data-plan ul li {
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+  }
+  
+  
+  
+  .data-plan a {
+  
+    color: #000078;
+    padding: 1rem 1.2rem;
+    margin-top: 3rem;
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    border-radius: 0.8854rem;
+    background: #FFF;
+    outline: none;
+    border: none;
+  }
+  
+  
+  .faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .faq .faq-box {
+  
+    width: 95%;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 41.040000915527344px 42.47999954223633px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  #FAQ h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  
+  
+  
+  
+  .faq-box p {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  
+  
+  .faq span {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  
+  }
+  
+  .faq-box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    user-select: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    display: flex;
+  
+  }
+  
+  
+  .join h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 550;
+    line-height: 6rem;
+    padding: 5rem 6rem 0 6rem;
+    font-family: "Roboto", sans-serif;
+  
+  }
+  
+  
+  .form {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .form input {
+    width: 50%;
+    padding: 0.9rem;
+    border-radius: 9px;
+    border: 0.3px solid #313131;
+    outline: none;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #313131;
+    margin: 20px;
+  }
+  
+  .form input::placeholder {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #313131;
+    opacity: 0.4;
+  
+  }
+  
+  
+  .form button {
+    border: none;
+    border-radius: 0.8rem;
+    background: #A901B8;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 100px;
+    gap: 5%;
+    font-family: "Roboto", sans-serif;
+  
+  
+  }
+  
+  .footer-word {
+    width: 90%;
+    line-height: 2rem;
+    font-size: 0.8rem;
+  }
+  
+  footer ul {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+  
+  
+  
+  }
+  
+  
+  
+  footer ul a {
+    color: black;
+    font-family: "Roboto", sans-serif;
+  
+  
+  
+  
+  
+  }
+  
+  
+  span p {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  span hr {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    width: 90%;
+    margin: 50px auto;
+  }
+  
+  @media screen and (max-width: 650px) {
+  
+    nav {
+      width: 100%;
+      padding: 20px;
+      z-index: 1;
+    }
+  
+    nav ul li a {
+      display: none;
+    }
+  
+    .home {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .home .box {
+      width: 100%;
+      margin-top: 100px;
+    }
+  
+    .box button {
+      width: 50%;
+    }
+  
+    .Services {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .Services p {
+      width: 100%;
+  
+  
+    }
+  
+    .Services .home-services {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+    }
+  
+    .home-services .services-con {
+      width: 100%;
+      height: 350px;
+      padding: 20px;
+      font-size: 0.1rem;
+    }
+  
+    .con1 {
+      width: 100%;
+    }
+  
+  
+    .container1 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .container1 .con3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0%;
+      margin: 10px;
+    }
+  
+    .container1 .why-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .container1 .con3:first-child img {
+      width: 100%;
+      height: 500px;
+    }
+  
+    .register p {
+      width: 100%;
+    }
+  
+  
+    .register-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .register-box img {
+      width: 100%;
+    }
+  
+    .register-box p {
+      width: 100%;
+      text-align: center;
+  
+    }
+  
+    .register-box h3 {
+      width: 100%;
+      text-align: center;
+  
+    }
+  
+    .register-box1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .register-box1 img {
+      width: 100%;
+    }
+  
+    .register-box1 p {
+      font-size: 0.8rem;
+      width: 100%;
+      text-align: center;
+  
+    }
+  
+    .register-box1 h3 {
+      width: 100%;
+      text-align: center;
+  
+    }
+  
+    .About {
+  
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0%;
+    }
+  
+    .About-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+  
+    .About-box h2 {
+      width: 100%;
+    }
+  
+    .About-box p {
+      width: 100%;
+    }
+  
+    .About-box img {
+      width: 70%;
+    }
+  
+    .vision {
+  
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0%;
+      margin-top: 50px;
+    }
+  
+    .vision-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+  
+    .vision-box h2 {
+      width: 100%;
+    }
+  
+    .vision-box p {
+      width: 100%;
+    }
+  
+    .vision-box img {
+      width: 60%;
+    }
+  
+    .testimonial {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .testimonial .testimonial-container {
+      gap: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .testimonial-heading p {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+  
+    .testimonial-container .testimonial-box {
+      width: 100%;
+    }
+  
+    .data {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .data-box {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .data-box .data-plan {
+      width: 90%;
+      justify-content: center;
+  
+    }
+  
+    .data h2 {
+      font-size: 1.3rem;
+      padding: 10px;
+    }
+  
+    #FAQ h2 {
+      margin-top: 50px;
+  
+    }
+  
+    .faq {
+      width: 100%;
+      padding: 10px;
+  
+    }
+  
+    .faq .faq-box {
+      width: 100%;
+    }
+  
+    .faq-box p {
+      font-size: 0.9rem;
+  
+    }
+  
+    .faq span {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8rem;
+  
+    }
+  
+    .faq-box select {
+      width: 100%;
+      border: none;
+      outline: none;
+      user-select: none;
+      font-weight: bolder;
+      font-size: 0.5rem;
+      display: flex;
+      padding: 0%;
+    }
+  
+    .join {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .join h2 {
+      width: 90%;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      text-align: center;
+      padding: 0%;
+      margin-top: 80px;
+    }
+  
+    .join .form {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .form input::placeholder {
+      font-size: 1.3rem;
+  
+    }
+  
+    .form button {
+      width: 100%;
+      padding: 10px;
+    }
+  
+  
+    footer {
+      width: 90%;
+      flex-direction: column;
+      gap: 10%;
+    }
+  
+    .footer-word {
+      width: 100%;
+    }
+  
+    footer ul {
+      width: 100%;
+      display: flex;
+      margin: 10px;
+  
+    }
+  
+    footer ul p {
+      font-weight: bolder;
+    }
+  
+    span p {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+    }
+  
+    span hr {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      width: 90%;
+      margin: 50px auto;
+    }
+}
+  
+</style>
+
+  <body>
+  <nav>
+    <div class="logo"><img src="/Asset/logo.png" alt=""></div>
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#price">pricing</a></li>
+      <li><a href="#Testimonial">Testimonial </a></li>
+      <li><a href="#FAQ">FAQ</a></li>
+    </ul>
+    <div class="nav">
+      <a href="/Login.html">Login</a>
+      <a href="/signup.html">Signup</a>
+    
+    </div>
+  </nav>
+  <section id="Home">
+    <div class="home">
+      <div class="box">
+        <h1>Stop Dialing USSD Codes, Embrace the New Way To Recharge Airtime And Pay Bills</h1>
+        <p>With Superjara, topping up your airtime, data subscription and bills payment will be a breeze.</p>
+        <button> Get Started</button>
+      </div>
+
+      <div class="box">
+        <img src="/Asset/hero.png" alt="">
+      </div>
+    </div>
+
+    <div class="home-con">
+      <span>Our Partners</span>
+
+      <div class="homecon1">
+        <img src="/Asset/swift.png" alt="">
+        <img src="/Asset/startime.png" alt="">
+        <img src="/Asset/spect.png" alt="">
+        <img src="/Asset/mtn.png" alt="">
+        <img src="/Asset/ipnx.png" alt="">
+        <img src="/Asset/gotv.png" alt="">
+        <img src="/Asset/dstv.png" alt="">
+        <img src="/Asset/cool.png" alt="">
+        <img src="/Asset/airtel.png" alt="">
+        <img src="/Asset/aedc.png" alt="">
+        <img src="/Asset/9mobile.png" alt="">
+      </div>
+    </div>
+<section id="Services">
+  
+  <div class="Services">
+    <span>Our Services</span>
+      <p>Be rest assured for unparalleled data, airtime, bills payment services and cash back experience. Join
+        our satisfied customers who have unlocked the power of earning more while staying connected online.
+        Enjoy the difference!</p>
+        
+        <div class="home-services">
+          <div class="services-con">
+            <img src="/Asset/discount.png" alt="">
+            <h3>Buy Airtime/Data</h3>
+
+            <h4>Welcome to the future of managing internet bills payment. With Superjara, you can choose to pay
+              with your debit/credit card, net banking, USSD codes and other payment methods. The choice is
+              yours!</p>
+            </div>
+            <div class="services-con">
+          <img src="/Asset/security.png" alt="">
+          
+          <h3>Cable TV Subscription</h3>
+          <h4>Use our user-friendly platform for your cable TV subscription to suit your preferences and
+            budgets. Welcome to the next generation of instant activation of cable TV subscription..</p>
+          </div>
+          <div class="services-con">
+          <img src="/Asset/admin.png" alt="">
+          <h3>Electricity Bill</h3>
+          <h4>With a few simple clicks, you will easily manage your electricity bills from your comfort zone.
+            Say good-bye to the manual electricity bill payment and long queues.</p>
+          </div>
+          <div class="services-con">
+            <img src="/Asset/discount (1).png" alt="">
+            <h3>Internet Bill</h3>
+            <h4>Never miss important calls or a beat online, use Superjara, reliable recharge services for your
+              airtime and data at a very cost-effective rate. We’ve got you covered.</p>
+            </div>
+            <div class="services-con">
+              <img src="/Asset/security.png" alt="">
+              <h3>Education</h3>
+              <h4>Unlock the potential with our premium online education services. Embark on the transformative
+                learning journey today as you can check your results.</p>
+              </div>
+              <div class="services-con">
+                <img src="/Asset/admin.png" alt="">
+                <h3>Airtime to Cash</h3>
+                <h4>Get ready to make extra cash! Convert your unused airtime to cash with our airtime to cash
+                  service. Say goodbye to wasted airtime and hello to instant cash in your wallet or bank account.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <div class="con1">
+      <h2>How We Stand Out?</h2>
+      <p>Join us today @Superjara and experience the difference. Stand out from the crowd by embracing the new way
+        to recharge airtime, subscribe data and pay bills</p>
+    </div>
+    <div class="con2">
+      <div class="box-1"></div>
+      <div class="box-1"></div>
+    </div>
+
+    <div class="container1">
+      <div class="con3"><img src="/Asset/why.png" alt=""></div>
+      <div class="con3">
+        <div class="why-box">
+          <img src="/Asset/1.png" alt="">
+          <div class="why-text">
+            <h3>One-stop solution</h3>
+            <p>Unlike manual methods that require multiple USSD CODES, Superjara offers an automated
+              solution to
+              recharge airtime,
+              subscribe data, pay bills and cashback.</p>
+          </div>
+        </div>
+        <div class="why-box">
+          <img src="Asset/2.png" alt="">
+          <div class="why-text">
+            <h3>Latest Technology</h3>
+            <p>we leverage on the latest advancement in technology to bring you a remarkable experience. Get
+              ready
+              to do it better with
+              Superjara. Enjoy!</p>
+          </div>
+        </div>
+        <div class="why-box">
+          <img src="/Asset/3.png" alt="">
+          <div class="why-text">
+            <h3>24/7 Customer Support</h3>
+            <p>Our Customer Service Support are always ready to attend to your request and sort out every
+              challenge.
+              Kindly, Get In
+              Touch</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <div class="register">
+    <h2>How it works</h2>
+    <p>It’s about you and your family, having a comfortable payment, exceptional service and a lender.</p>
+
+  </div>
+
+  <div class="register-box">
+    <img src="/Asset/register.png" alt="">
+    <span>
+      <h3>Register</h3>
+      <p>Click on the Sign up button to get started today, fill in with your correct details. Welcome message
+        awaits
+        you. Thanks for choosing us!</p>
+    </span>
+
+  </div>
+  <div class="register-box1">
+    <span>
+      <h3>Fund your E-wallet</h3>
+      <p>After you have registered and activated your account, fund your wallet to start successful transactions.
+        Enjoy!</p>
+    </span>
+
+    <img src="/Asset/fund (1).png" alt="">
+  </div>
+
+
+  <div class="register-box">
+    <img src="/Asset/start.png" alt="">
+    <span>
+      <h3>Start successful transactions</h3>
+      <p>Yes! You are good to start enjoying our unlimited and affordable services. Just Dey Enjoy.</p>
+    </span>
+
+  </div>
+
+
+  <section id="About">
+    <div class="About">
+      <div class="About-box">
+        <h2>About us</h2>
+        <p>At Superjara, we understand that managing and paying your bills is time-consuming and cumbersome.
+          Which is why we aim to simplify the process with our fast, affordable and 24/7 support for our
+          airtime, data and bills payment services.</p>
+      </div>
+      <div class="About-box">
+        <img src="/Asset/about.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="vision">
+    <div class="vision">
+      <div class="vision-box">
+        <h2>Our Vision</h2>
+        <p>At Superjara, we’re committed to provide innovative platforms that simplify the way you recharge
+          airtime and cater for others daily needs. Our vision is to enhance your connectivity experience by
+          offering a user-friendly platform that eliminates the complexities of manual methods. Get In Touch
+          to attend to your request anytime, anywhere.</p>
+      </div>
+      <div class="vision-box">
+        <img src="/Asset/vision.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="Testimonial">
+    <div class="testimonial">
+      <div class="testimonial-heading">
+        <p>What Our Clients Say About Us</p>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial-box">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-box-p">Using Superjara for my data and airtime needs has been a game-changer. The
+            service is reliable.</p>
+          <div class="customer">
+            <h4>Habeeb</h4>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-box-p">The convenience of being able to recharge my airtime whenever I need it is
+            fantastic. Superjara makes it so easy and the
+            process is lightning fast.</p>
+          <div class="customer">
+            <h4>Tomiwa</h4>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-box-p">Using Superjara for my data and airtime needs has been a game-changer. The
+            service is reliable.</p>
+          <div class="customer">
+            <h4>Remi</h4>
+            <p>Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="price">
+    <div class="data">
+      <h2>Affordable Data Plans and Prices</h2>
+
+      <div class="data-box">
+        <div class="data-plan">
+          <img src="/Asset/mtn-data.png">
+          <h4>MTN DATA</h4>
+          <ul>
+            <li>500MB</li>
+            <li>
+              &#8358;
+              132.5
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>1.00GB</li>
+            <li>
+
+              &#8358;
+              265
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>2.00GB</li>
+            <li>
+
+              &#8358;
+              530
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>3.00GB</li>
+            <li>
+
+              &#8358;
+              795
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>5.00GB</li>
+            <li>
+
+              &#8358;
+              1325
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>10.0GB</li>
+            <li>
+              &#8358;
+              2650 </li>
+            <li>60days</li>
+          </ul>
+          <a href="/signup.html">Get Started</a>
+        </div>
+        <div class="data-plan">
+          <img src="Asset//glo-data.png">
+          <h4>GLO DATA</h4>
+          <ul>
+            <li>200MB</li>
+            <li>
+              &#8358;
+              54
+            </li>
+            <li>14days</li>
+          </ul>
+          <ul>
+            <li>500MB</li>
+            <li>
+              &#8358;
+              135
+            </li>
+            <li>14days</li>
+          </ul>
+          <ul>
+            <li>500MB</li>
+            <li>
+              &#8358;
+              135
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>1.00GB</li>
+            <li>
+              &#8358;
+              270
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>2.00GB</li>
+            <li>
+              &#8358;
+              540
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>3.00GB</li>
+            <li>
+              &#8358;
+              810
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>5.00GB</li>
+            <li>
+              &#8358;
+              1350
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>10GB</li>
+            <li>
+              &#8358;
+              2700
+            </li>
+            <li>30days</li>
+          </ul>
+        <a href="/signup.html">Get Started</a>
+
+        </div>
+        <div class="data-plan">
+          <img src="Asset/airtel-data.png">
+          <h4>AIRTEL DATA</h4>
+          <ul>
+            <li>100MB</li>
+            <li>
+              &#8358;
+              28.5
+            </li>
+            <li>7days</li>
+          </ul>
+          <ul>
+            <li>300MB</li>
+            <li>
+              &#8358;
+              85.5 </li>
+            <li>7days</li>
+          </ul>
+          <ul>
+            <li>500MB</li>
+            <li>
+              &#8358;
+              142.5
+            </li>
+            <li>30days</li>
+          </ul>
+
+          <ul>
+            <li>1.00GB</li>
+            <li>
+              &#8358;
+              285 </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>2.00GB</li>
+            <li>
+              &#8358;
+              570
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>5.00GB</li>
+            <li> &#8358;
+              1425 </li>
+
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>10GB</li>
+            <li>&#8358;
+              2850 </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>15.0GB</li>
+            <li>&#8358;
+              4275 </li>
+            <li>30days</li>
+          </ul>
+          <a href="/signup.html">Get Started</a>
+        </div>
+        <div class="data-plan">
+          <img src="Asset/mobile-data.png">
+          <h4>9MOBILE DATA</h4>
+          <ul>
+            <li>1.00GB</li>
+            <li>
+              &#8358;
+              150
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>1.5GB</li>
+            <li>
+              &#8358;
+              225
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>2GB</li>
+            <li>
+              &#8358;
+              300 </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>2.5GB</li>
+            <li>
+              &#8358;
+              375
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>3GB</li>
+            <li>
+              &#8358;
+              450
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>4.5GB</li>
+            <li>
+              &#8358;
+              675
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>5.00GB</li>
+            <li>
+              &#8358;
+              750
+            </li>
+            <li>30days</li>
+          </ul>
+          <ul>
+            <li>6.00GB</li>
+            <li>
+              &#8358;
+              900
+            </li>
+            <li>30days</li>
+          </ul>
+
+        <a href="/signup.html">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="FAQ">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <div class="faq-box">
+        <select>
+          <option style="display: none;">
+            <p>Which button between SIGN UP and LOGIN will I click to get started? </p>
+          </option>
+          <option style="display: block;">
+            <p>Kindly click on Sign up to GET STARTED and login button to access your dashboard after activating your
+              account.</p>
+          </option>
+        </select>
+      </div>
+      <hr>
+      <div class="faq-box">
+        <select>
+          <option style="display: none;">
+            <p>How do I know if my account is activated and I can make a purchase? </p>
+          </option>
+          <option style="display: block;">
+            <p>Once you can access your dashboard, you have successfully registered. (Welcome On Board)</p>
+          </option>
+        </select>
+      </div>
+      <hr>
+      <div class="faq-box">
+        <select>
+          <option style="display: none;">
+            <p>What if I encounter an issue while registering, how do I get it sorted out? </p>
+          </option>
+          <option style="display: block;">
+            <p>Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.</p>
+          </option>
+        </select>
+      </div>
+      <hr>
+      <div class="faq-box">
+        <select>
+          <option style="display: none;">
+            <p>How secure is my transaction history and can I access them anytime? </p>
+          </option>
+          <option style="display: block;">
+            <p>Absolutely 100 percent secure! You can access your transaction history anytime, any day.</p>
+          </option>
+        </select>
+      </div>
+      <span>Get more questions? We’ve got you covered. Contact Us!</span>
+
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="join">
+      <h2>Join over 2000+ customers putting their trust with us</h2>
+      <form action="" class="form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <button>Contact us</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-word">
+      <img src="/Asset/logo.png" alt="">
+      <p>Superjara is your one-stop solution platform for all your online daily needs. No longer do multiple USSD CODES
+        for different services. We have made it recharge airtime, subscribe data, pay bills and cashback.</p>
+    </div>
+
+    <ul>
+      <p>Products</p>
+      <li><a href="#Services">Airtime & Data</a></li>
+      <li><a href="#Services">Utility Bills</a></li>
+      <li><a href="#Services">Educational Payment</a></li>
+      <li><a href="#Services">Airtime to Cash</a></li>
+    </ul>
+
+    <ul>
+      <p>Company</p>
+      <li><a href="#About">Our Story</a></li>
+      <li><a href="#vision">Our Mission</a></li>
+      <li><a href="#Testimonial">Testimonials</a></li>
+    
+    </ul>
+
+    <ul>
+      <p>Contact us</p>
+      <li><a href="">ibrahimademola145@gmail.com</a></li>
+      <li><a href="">08065351087</a></li>
+      <li><a href="">Facebook</a></li>
+    </ul>
+
+
+  </footer>
+
+  <span>
+    
+    <hr>
+  
+  <p>© Copyright 2023 SuperJara All rights reserved.</p>
+  </span>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
